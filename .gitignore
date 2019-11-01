@@ -6,6 +6,7 @@ test.out.dSYM
 .DS_Store
 -Wno-atomic-implicit-seq-cst
 tests/unit-test/result.log
+tests/unit-test/libft.so
 tests/unit-test/.fun_diff
 tests/war-machine/deepthought
 tests/war-machine/my_config.sh
