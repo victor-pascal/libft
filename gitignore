@@ -1,0 +1,9 @@
+*.out
+test/*
+test
+test/war-machine
+test/unit-test
+.vscode
+test.out.dSYM
+.DS_Store
+-Wno-atomic-implicit-seq-cst
