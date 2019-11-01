@@ -11,3 +11,4 @@ tests/unit-test/.fun_diff
 tests/unit-test/.shmem
 tests/war-machine/deepthought
 tests/war-machine/my_config.sh
+tests/war-machine/user_exe.*
