@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtoty <jtoty@student.42.fr>                +#+  +:+       +#+        */
+/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/28 12:01:40 by jtoty             #+#    #+#             */
-/*   Updated: 2019/10/10 17:38:16 by lmartin          ###   ########.fr       */
+/*   Updated: 2019/11/02 00:56:57 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,18 +80,5 @@ int		main(int argc, const char *argv[])
 
 		printf("%s", ft_memchr(tab, -1, 7));
 	}
-	else if (arg == 7)
-	{
-		char *pouet = "z";
-		char *lolzer = (char *)&pouet[2];
-		lolzer = "aaaaaaaaaa";
-		str = ft_memchr(pouet, 'a', 50);
-		if (!str)
-			ft_print_result("NULL");
-		else
-		{
-			ft_print_result(str);
-		}
-	}
-       	return (0);
+    return (0);
 }
