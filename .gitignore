@@ -1,11 +1,10 @@
 *.out
 *.o
 libft.a
-test/*
-test
-test/war-machine
-test/unit-test
 .vscode
 test.out.dSYM
 .DS_Store
 -Wno-atomic-implicit-seq-cst
+tests/unit-test/esult.log
+tests/war-machine/deepthought
+tests/war-machine/my_config.sh
