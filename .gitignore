@@ -8,5 +8,6 @@ test.out.dSYM
 tests/unit-test/result.log
 tests/unit-test/libft.so
 tests/unit-test/.fun_diff
+tests/unit-test/.shmem
 tests/war-machine/deepthought
 tests/war-machine/my_config.sh
