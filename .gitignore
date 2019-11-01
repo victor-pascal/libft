@@ -1,5 +1,6 @@
 *.out
 *.o
+libft.a
 test/*
 test
 test/war-machine
