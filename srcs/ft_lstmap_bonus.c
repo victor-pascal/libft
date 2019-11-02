@@ -6,7 +6,7 @@
 /*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/01 20:45:51 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/01 20:45:52 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/02 03:52:05 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	{
 		if (!(new_item = ft_lstnew(lst->content)))
 		{
+			if (del)
+				del(new_list->content);
 			free(new_list);
 			return (NULL);
 		}
-		if (del)
-			del(new_list->content);
 		new_item->content = f(new_item->content);
 		ft_lstadd_back(&new_list, new_item);
 		lst = lst->next;
