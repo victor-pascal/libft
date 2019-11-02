@@ -50,7 +50,7 @@ CFLAGS = -Wall -Werror -Wextra -I ${HEADER}
 OBJS = ${SRCS:.c=.o}
 OBJS_BONUS := ${SRCS_BONUS:.c=.o} ${SRCS:.c=.o}
 
-${NAME}: ${OBJS}
+${NAME} : ${OBJS}
 	@ar rcs ${NAME} ${OBJS}
 
 all : ${NAME}

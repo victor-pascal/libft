@@ -6,7 +6,7 @@
 /*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 20:31:37 by vpascal           #+#    #+#             */
-/*   Updated: 2019/10/18 21:09:19 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/02 14:25:56 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char *str;
 
 	str = (unsigned char *)s;
-	while (n--)
+	while (n-- > 0)
 	{
 		if (*str != (unsigned char)c)
 			str++;

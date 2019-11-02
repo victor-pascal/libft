@@ -6,7 +6,7 @@
 /*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 20:23:59 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/01 17:57:49 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/02 11:50:39 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	if (dst_c > src_c)
 	{
-		while (len--)
+		while (len-- > 0)
 			dst_c[len] = src_c[len];
 	}
 	else

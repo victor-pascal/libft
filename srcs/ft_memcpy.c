@@ -6,7 +6,7 @@
 /*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 18:48:00 by vpascal           #+#    #+#             */
-/*   Updated: 2019/10/26 22:50:36 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/02 11:49:22 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 		return (NULL);
 	source = (char *)src;
 	destination = (char *)dst;
-	while (n--)
+	while (n-- > 0)
 		*destination++ = *source++;
 	return (dst);
 }
