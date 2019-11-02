@@ -6,7 +6,7 @@
 /*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/28 12:01:40 by jtoty             #+#    #+#             */
-/*   Updated: 2019/11/02 00:56:57 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/02 01:18:33 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,5 @@ int		main(int argc, const char *argv[])
 
 		printf("%s", ft_memchr(tab, -1, 7));
 	}
-    return (0);
+       	return (0);
 }
