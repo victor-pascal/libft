@@ -1,5 +1,6 @@
 *.out
 *.o
+*.swp
 libft.a
 .vscode
 test.out.dSYM
