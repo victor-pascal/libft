@@ -6,7 +6,7 @@
 /*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 20:49:33 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/03 12:56:00 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/03 14:39:29 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	while (dst[i] && i < dstsize)
 		i++;
 	dst_length = i;
-	if (i == dstsize)
+	if (i >= dstsize)
 		return (dst_length + ft_strlen(src));
 	while (src[i - dst_length] && i < dstsize - 1)
 	{
