@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/14 18:48:00 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/03 13:07:06 by victorpasca      ###   ########.fr       */
+/*   Created: 2019/11/03 11:18:26 by victorpasca       #+#    #+#             */
+/*   Updated: 2019/11/03 11:43:23 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../srcs/libft.h"
+#include <stdio.h>
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+int main()
 {
-	char	*source;
-	char	*destination;
+   // char *str = "blablabla";
+   // char dst [100];
 
-	if (!src && !dst)
-		return (NULL);
-	source = (char *)src;
-	destination = (char *)dst;
-	while (n-- > 0)
-		*destination++ = *source++;
-	return (dst);
+   
+
+    printf("Result : %s\n", ft_memcpy(0, 0, 0));
+    return (0);
 }

@@ -61,15 +61,11 @@ char			*ft_itoa(int n)
 	if (!(str = (char *)malloc(sizeof(char) * (i + 2))))
 		return (NULL);
 	if (n < 0)
-	{
-		str[i2] = '-';
-		i2++;
-	}
+		str[i2++] = '-';
 	while (i > 1)
 	{
-		str[i2] = tmp / ft_power(10, i - 1) + '0';
+		str[i2++] = tmp / ft_power(10, i - 1) + '0';
 		tmp -= (tmp / ft_power(10, i - 1)) * ft_power(10, i - 1);
-		i2++;
 		i--;
 	}
 	str[i2] = tmp + '0';
