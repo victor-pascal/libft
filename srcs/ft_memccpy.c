@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 22:46:38 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/03 16:11:35 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/05 13:25:06 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ void	*ft_memccpy(void *restrict d, const void *restrict s, int c, size_t n)
 
 	destination = (unsigned char *)d;
 	source = (unsigned char *)s;
-	if (!n || n < 0)
-		return (NULL);
-	while (n-- > 0)
+	while ((int)n-- > 0)
 	{
 		if (*source == (unsigned char)c)
 		{

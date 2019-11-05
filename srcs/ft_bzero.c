@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 20:23:13 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/01 17:57:36 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/05 12:59:37 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	*ft_bzero(void *s, size_t n)
 {
-	return (((n <= 0) ? s : ft_memset(s, 0, n)));
+	return (ft_memset(s, 0, n));
 }

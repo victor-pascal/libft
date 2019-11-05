@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 20:23:59 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/03 16:11:58 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/05 13:14:58 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*dst_c;
 	char	*src_c;
-	size_t	i;
-
-	if (!dst && !src)
-		return (NULL);
+	
 	dst_c = (char*)dst;
 	src_c = (char*)src;
-	i = 0;
+
+	if (src == dst)
+		return (dst);
 	while ((int)len-- > 0)
 	{
 		if (dst_c > src_c)
