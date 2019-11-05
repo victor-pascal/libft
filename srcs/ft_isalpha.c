@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 22:18:58 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/01 18:00:27 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/05 12:51:12 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }

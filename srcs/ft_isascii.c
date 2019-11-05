@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 22:46:13 by vpascal           #+#    #+#             */
-/*   Updated: 2019/10/08 18:53:37 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/05 12:51:00 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	return (c >= 0 && c <= 127);
 }
