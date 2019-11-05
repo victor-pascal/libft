@@ -6,11 +6,11 @@
 /*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 22:32:05 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/05 12:53:43 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/05 12:54:13 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isdigit(int c)
 {
-	return c >= '0' && c <= '9');
+	return (c >= '0' && c <= '9');
 }
