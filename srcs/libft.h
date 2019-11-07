@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 21:27:51 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/01 20:04:10 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/07 21:42:20 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ void			*ft_memset(void *b, int c, size_t len);
 void			*ft_bzero(void *s, size_t n);
 void			*ft_memcpy(void *restrict dst,
 				const void *restrict src, size_t n);
-void			*ft_memccpy(void *restrict d,
-				const void *restrict s, int c, size_t n);
+void			*ft_memccpy(void *restrict dst,
+				const void *restrict src, int c, size_t n);
 void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);

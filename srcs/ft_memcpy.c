@@ -6,7 +6,7 @@
 /*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 18:48:00 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/05 12:49:15 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/07 21:38:17 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	char	*source;
-	char	*destination;
+	unsigned char *str1;
+	unsigned char *str2;
 
+	str1 = (unsigned char *)dst;
+	str2 = (unsigned char *)src;
 	if (!n || dst == src)
 		return (dst);
-	source = (char *)src;
-	destination = (char *)dst;
-	while (n-- > 0)
-		*destination++ = *source++;
+	while (n--)
+		*str1++ = *str2++;
 	return (dst);
 }

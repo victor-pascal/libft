@@ -3,27 +3,40 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 01:26:11 by vpascal           #+#    #+#             */
-/*   Updated: 2019/10/09 19:44:12 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/07 22:19:37 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
+int	check(const char *haystack, const char *needle, size_t n)
+{
+	while (n-- && *haystack && *needle && *haystack == *needle)
+	{
+		++haystack;
+		++needle;
+	}
+	if (!*needle)
+		return (1);
+	return (0);
+}
+
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
-	int		n;
-
-	i = 0;
-	n = 0;
-	while (haystack[i] != '\0' && i < len && needle[n] != '\0')
+	if (*needle == '\0')
+		return ((char*)haystack);
+	while (*haystack && len)
 	{
-		n = (haystack[i] == needle[n]) ? n + 1 : 0;
-		i++;
+		if (check(haystack, needle, len))
+			return ((char *)haystack);
+		++haystack;
+		--len;
 	}
-	return ((needle[n] == '\0') ? (char *)&haystack[i - n] : NULL);
+	return (0);
+
 }

@@ -6,7 +6,7 @@
 /*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 20:23:59 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/05 13:14:58 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/07 21:55:50 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,23 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*dst_c;
-	char	*src_c;
-	
-	dst_c = (char*)dst;
-	src_c = (char*)src;
+	unsigned char		*dst_c;
+	const unsigned char	*src_c;
 
-	if (src == dst)
+	dst_c = dst;
+	src_c = src;
+	if (src_c == dst_c)
 		return (dst);
-	while ((int)len-- > 0)
+	if (src_c < dst_c)
 	{
-		if (dst_c > src_c)
-			*(dst_c + len) = *(src_c + len);
-		else
-			*(dst_c++) = *(src_c++);
+		src_c = src_c + len - 1;
+		dst_c = dst_c + len - 1;
+		while (len--)
+			*dst_c-- = *src_c--;
 	}
+	else
+		while (len--)
+			*dst_c++ = *src_c++;
 	return (dst);
 }
+

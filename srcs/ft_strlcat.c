@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 20:49:33 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/03 16:12:25 by vpascal          ###   ########.fr       */
+/*   Updated: 2019/11/07 22:16:21 by victorpasca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
-	size_t i;
-	size_t dst_length;
+	size_t	i;
+	size_t	dstlen;
+	size_t	srclen;
 
+	dstlen = ft_strlen(dst);
+	srclen = ft_strlen(src);
+	if (dstsize < dstlen)
+		return (dstsize + srclen);
 	i = 0;
-	while (dst[i] && i < dstsize)
-		i++;
-	dst_length = i;
-	if (i >= dstsize)
-		return (dst_length + ft_strlen(src));
-	while (src[i - dst_length] && i < dstsize - 1)
+	while (src[i] != '\0' && (dstlen + i) < (dstsize - 1))
 	{
-		dst[i] = src[i - dst_length];
-		i++;
+		dst[dstlen + i] = src[i];
+		++i;
 	}
-	if (dst_length < dstsize)
-		dst[i] = '\0';
-	return (dst_length + ft_strlen(src));
+	dst[dstlen + i] = '\0';
+	return (dstlen + srclen);
+
 }
