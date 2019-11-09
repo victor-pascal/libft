@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
+/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 20:49:33 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/07 22:16:21 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/08 22:01:28 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,4 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	}
 	dst[dstlen + i] = '\0';
 	return (dstlen + srclen);
-
 }

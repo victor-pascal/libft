@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
+/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 00:54:57 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/07 22:09:47 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/08 22:02:21 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-
 	size_t	i;
 
 	if (c == '\0')

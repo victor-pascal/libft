@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
+/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 01:26:11 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/07 22:19:37 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/08 22:02:00 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-int	check(const char *haystack, const char *needle, size_t n)
+int		check(const char *haystack, const char *needle, size_t n)
 {
 	while (n-- && *haystack && *needle && *haystack == *needle)
 	{
@@ -24,7 +24,6 @@ int	check(const char *haystack, const char *needle, size_t n)
 		return (1);
 	return (0);
 }
-
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -38,5 +37,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		--len;
 	}
 	return (0);
-
 }

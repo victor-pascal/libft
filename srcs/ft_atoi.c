@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
+/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/01 20:43:39 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/07 22:26:04 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/08 21:56:58 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-
 
 int		ft_atoi(const char *str)
 {

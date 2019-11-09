@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
+/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 20:23:59 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/07 21:55:50 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/08 22:01:14 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			*dst_c++ = *src_c++;
 	return (dst);
 }
-

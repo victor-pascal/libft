@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: victorpascal <victorpascal@student.42.f    +#+  +:+       +#+        */
+/*   By: vpascal <vpascal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 23:12:06 by vpascal           #+#    #+#             */
-/*   Updated: 2019/11/07 22:03:48 by victorpasca      ###   ########.fr       */
+/*   Updated: 2019/11/08 22:02:27 by vpascal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,4 @@ int		ft_tolower(int c)
 	if ('A' <= c && c <= 'Z')
 		return (c + 32);
 	return (c);
-
 }
